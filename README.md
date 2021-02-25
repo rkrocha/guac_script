@@ -1,8 +1,8 @@
 # guac.sh
 
-A script to make life easier when using 42SP's Guacamole remote terminal.<br><br>
+A script to make life easier when using 42SP's Guacamole remote terminal.<br>
 
-Adds aliases, a more helpful shell prompt, colors to some commands, some configs, and a script to initialize your ssh keys once you have copied them.<br><br>
+Adds aliases, a more helpful shell prompt, colors to some commands, some configs, and a script to initialize your ssh keys once you have copied them.<br>
 
 Usage on Guacamole terminal:
 ```shell
