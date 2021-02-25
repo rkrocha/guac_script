@@ -6,7 +6,7 @@ MY_REPO="https://raw.githubusercontent.com/rkrocha/guac_script/master/"
 
 # These are the files to be downloaded from MY_REPO. Each of these names is concatenated to the end of MY_REPO, forming a working address.
 # Esses são os arquivos que serão baixados de MY_REPO. Cada um desses nomes é concatenado ao fim de MY_REPO, formando um endereço utilizável.
-MY_FILES=".zshrc .zsh_aliases .vimrc ssh_init.sh"
+MY_FILES=".zshrc .vimrc ssh_init.sh"
 
 curl_file ()
 {

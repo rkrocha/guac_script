@@ -45,4 +45,4 @@ alias gr="git restore --staged"
 alias gs="git status"
 
 
-PROMPT='%F{blue}%1~ $#%f '
+PROMPT='%F{blue}%1~ $%f '
