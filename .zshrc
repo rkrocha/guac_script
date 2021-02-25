@@ -1,3 +1,8 @@
+#
+# ~/.zshrc
+#
+
+# ALIASES
 # MISC:
 alias cp="cp -iv"
 alias f="clear && la"
@@ -38,3 +43,6 @@ alias gc="git commit -m"
 alias gp="git push"
 alias gr="git restore --staged"
 alias gs="git status"
+
+
+PROMPT='%F{blue}%1~%f %# '
