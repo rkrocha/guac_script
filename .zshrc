@@ -6,7 +6,7 @@ setopt MENU_COMPLETE
 env | grep -q ^OPATH || export OPATH=$PATH
 export PATH=$OPATH:/usr/share/zsh/5.3/help/:/usr/share/zsh/5.3/functions/:$HOME/.brew/bin
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -D -u
 
 # case insensitive path-completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
