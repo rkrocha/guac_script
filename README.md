@@ -6,5 +6,5 @@ Adds aliases, a more helpful shell prompt, colors to some commands, some configs
 
 Usage on Guacamole terminal:
 ```shell
-curl https://raw.githubusercontent.com/rkrocha/guac_script/master/guac.sh -o ~/guac.sh && sh ~/guac.sh
+sh -c "$(curl -sS https://raw.githubusercontent.com/rkrocha/guac_script/master/guac.sh)"
 ```
