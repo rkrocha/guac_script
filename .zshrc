@@ -4,9 +4,9 @@ PROMPT='%F{blue}%1~ $%f '
 setopt MENU_COMPLETE
 
 env | grep -q ^OPATH || export OPATH=$PATH
-export PATH=$OPATH:/usr/share/zsh/5.3/help/:/usr/share/zsh/5.3/functions/:$HOME/.brew/bin
+export PATH=$OPATH:$HOME/.brew/bin
 
-autoload -Uz compinit && compinit -D -u
+/usr/share/zsh/5.3/help/autoload -Uz /usr/share/zsh/5.3/functions/compinit && /usr/share/zsh/5.3/functions/compinit -D -u
 
 # case insensitive path-completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
