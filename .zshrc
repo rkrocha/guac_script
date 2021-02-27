@@ -4,7 +4,7 @@ PROMPT='%F{blue}%1~ $%f '
 setopt MENU_COMPLETE
 
 env | grep -q ^OPATH || export OPATH=$PATH
-export PATH=$OPATH:/usr/share/zsh/5.3/help/:/usr/share/zsh/5.3/functions/:$HOME/.brew/bin
+export PATH=$OPATH:/usr/share/zsh/5.3/help/:/usr/share/zsh/5.3/functions/
 
 autoload -Uz compinit && compinit -D -u
 
@@ -15,8 +15,7 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 zstyle ':completion:*' list-suffixes
 zstyle ':completion:*' expand prefix suffix
 
-unset PATH
-export PATH=$OPATH
+unset PATH && export PATH=$OPATH:$HOME/.brew/bin && unset OPATH
 
 # MISC:
 alias cp="cp -iv"
