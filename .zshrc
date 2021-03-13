@@ -15,7 +15,7 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 zstyle ':completion:*' list-suffixes
 zstyle ':completion:*' expand prefix suffix
 
-unset PATH && export PATH=$OPATH:$HOME/.brew/bin && unset OPATH
+unset PATH && export PATH=$OPATH:$HOME/.brew/bin:/$HOME/.scripts/ && unset OPATH
 
 # MISC:
 alias cp="cp -iv"

@@ -21,6 +21,8 @@ do
 	curl_file "$i"
 done
 
+ls -1a | grep -q "\.scripts" || mkdir .scripts
+
 ls -1a | grep -q "\.ssh" || (mkdir .ssh && echo "Don't forget to copy your SSH keys and run ssh_init.sh!")
 
 exec zsh

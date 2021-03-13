@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+	gcc -Wall -Werror -Wextra *.c -I$FT -L$FT -lft && ./a.out
+else
+	gcc -Wall -Werror -Wextra $@ -I$FT -L$FT -lft && ./a.out
+fi

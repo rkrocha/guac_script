@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+	gcc -Wall -Werror -Wextra -fsanitize=address -g *.c && ./a.out
+else
+	gcc -Wall -Werror -Wextra -fsanitize=address -g $@ && ./a.out
+fi
