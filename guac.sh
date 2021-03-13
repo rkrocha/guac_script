@@ -10,7 +10,7 @@ MY_FILES=".zshrc .vimrc ssh_init.sh .scripts/c .scripts/cft .scripts/cm .scripts
 
 cd ~
 
-ls -1a | grep -q "\.scripts" || (mkdir .scripts && chmod +x .scripts/*)
+ls -1a | grep -q "\.scripts" || mkdir .scripts
 
 curl_file ()
 {
@@ -22,6 +22,8 @@ for i in $MY_FILES
 do
 	curl_file "$i"
 done
+
+chmod +x .scripts/*
 
 ls -1a | grep -q "\.ssh" || (mkdir .ssh && echo "Don't forget to copy your SSH keys and run ssh_init.sh!")
 
