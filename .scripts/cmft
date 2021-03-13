@@ -1,7 +1,5 @@
 #!/bin/sh
 
-make -s -C $FT &>/dev/null && make clean -s -C $FT
-
 if [ -z "$1" ]
 then
 	gcc -Wall -Werror -Wextra *.c -I$FT -L$FT -lft -fsanitize=address -g && ./a.out

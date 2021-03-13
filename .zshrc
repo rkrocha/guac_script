@@ -1,10 +1,12 @@
 
 PROMPT='%F{blue}%1~ $%f '
 
-setopt MENU_COMPLETE
+export FT="$HOME/libft/"
 
 env | grep -q ^OPATH || export OPATH=$PATH
 export PATH=$OPATH:/usr/share/zsh/5.3/help/:/usr/share/zsh/5.3/functions/
+
+setopt MENU_COMPLETE
 
 autoload -Uz compinit && compinit -D -u
 
@@ -48,6 +50,7 @@ alias mc="make clean"
 alias mf="make fclean"
 alias mr="make re"
 alias ms="make src"
+alias mft="make -s -C $FT"
 alias norm="norminette"
 alias normc="norminette *.[ch]"
 
